@@ -8,18 +8,15 @@ SMSLink.ro allows you to send SMS to all mobile networks in Romania and also to 
 1. Create an account on [SMSLink.ro](https://www.smslink.ro/inregistrare/)
 2. Create a SMS Gateway connection at [SMSLink.ro / SMS Gateway / Configuration & Settings](https://www.smslink.ro/sms/gateway/setup.php). Each SMS Gateway connection is a pair of Connection ID and Password. 
 3. Find and replace within the example the values for Connection ID and Password parameters with the values obtained at the previous step.
-4. Within the examples find and replace the value for *to* and *message* parameters with the destination phone number for the SMS and with the message to be sent to the destination. Phone numbers should be formatted as a Romanian national mobile phone number (*07xyzzzzzz*).
+4. Within the examples find and replace the value for *to* and *message* parameters with the destination phone number for the SMS and with the message to be sent to the destination. Phone numbers should be formatted as a Romanian national mobile phone number (07xyzzzzzz) or as an International mobile phone number (00 + Country Code + Phone Number, example 0044zzzzzzzzz).
 
-## About SMS Gateway (BULK) API
+## New Features in SMS Gateway (BULK) Endpoint Version 3 API
 
-Please note that SMS Gateway (BULK) is designed to send large volumes of SMS in a single request and thus can send only SMS up to 160 characters. 
-For sending SMS longer than 160 characters, please use SMS Gateway (HTTP), SMS Gateway (SOAP) or SMS Gateway (JSON).
-
-Examples for SMS Gateway (HTTP), SMS Gateway (SOAP) or SMS Gateway (JSON) can be found here:
-
-1. SMS Gateway (HTTP): https://github.com/SMSLink-ro/Example-for-sending-SMS-using-PHP-cURL/blob/master/main.php
-2. SMS Gateway (SOAP): https://github.com/SMSLink-ro/Example-for-sending-SMS-using-PHP-SoapClient/blob/master/main.php
-3. SMS Gateway (JSON): https://github.com/SMSLink-ro/Example-for-sending-SMS-using-PHP-cURL-with-JSON/blob/master/main.php
+ * Supports concatenated SMS (longer than 160 characters)
+ * Supports all Romanian networks
+ * Supports all international networks
+ * Supports international phone numbers formatting
+ * Returns the remote Bulk Package ID
 
 ## Documentation
 
