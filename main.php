@@ -101,7 +101,7 @@ class SMSLinkSMSGatewayBulkPackage
         if (!is_null($password))
             $this->password = $password;
          
-        if (($testMode == true) or ($testMode == true))
+        if (($testMode == true) or ($testMode == false))
             $this->testMode = $testMode;
         
         if ((is_null($this->connection_id)) or (is_null($this->password)))
