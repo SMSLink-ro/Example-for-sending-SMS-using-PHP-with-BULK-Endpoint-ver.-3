@@ -17,7 +17,7 @@
  *
  *     PHP 5 with
  *     
- *         CURL enabled
+ *         PHP cURL
  *         
  *         Optional, for transmission compression the following compression libraries are needed:
  *         
