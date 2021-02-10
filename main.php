@@ -264,7 +264,6 @@ class SMSLinkSMSGatewayBulkPackage
         $messageText = str_replace("\r\n", "\n", $messageText);          // Converts Carriage Return + Line Feed to Line Feed        
         $messageText = $this->structureCharactersEncode($messageText);   // Encode structure characters
         $messageText = $this->cleanCharacters($messageText);             // Clean unsuported characters                
-        $messageText = substr($messageText, 0, 160);
         
         $this->packageContents[] = array(
                 "localMessageId"      => $localMessageId,
