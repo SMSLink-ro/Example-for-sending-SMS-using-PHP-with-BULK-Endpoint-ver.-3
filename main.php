@@ -71,7 +71,7 @@ class SMSLinkSMSGatewayBulkPackage
             )
         );
     
-    protected $clientVersion = 2.0;
+    protected $clientVersion = "2.1";
     
     protected $compressionMethods = array(
             0 => array("CompressionID" => 0, "Compression" => "No Compression"),
