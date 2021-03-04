@@ -15,7 +15,7 @@
  *
  *   System Requirements:
  *
- *     PHP 5 with
+ *     PHP 5+ with
  *     
  *         PHP cURL
  *         
