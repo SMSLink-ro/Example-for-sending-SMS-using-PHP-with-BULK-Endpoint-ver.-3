@@ -32,7 +32,7 @@
  *     Get your SMSLink / SMS Gateway Connection ID and Password from
  *         https://www.smslink.ro/get-api-key/
  *
- *   @version    2.0
+ *   @version    2.1
  *   @see        https://www.smslink.ro/sms-gateway-documentatie-sms-gateway.html
  *
  */
@@ -255,6 +255,7 @@ class SMSLinkSMSGatewayBulkPackage
         if (!is_numeric($localMessageId))
             return false;
                     
+        $receiverNumber = str_replace("+", "00", $receiverNumber);       // Converts + to 00
         $receiverNumber = preg_replace("/[^0-9]/", "", $receiverNumber); // Remove all non-numeric characters
         
         if (!is_numeric($receiverNumber))
