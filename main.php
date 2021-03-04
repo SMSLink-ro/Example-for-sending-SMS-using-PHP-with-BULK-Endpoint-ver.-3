@@ -467,7 +467,7 @@ $BulkSMSPackage = new SMSLinkSMSGatewayBulkPackage("MyConnectionID", "MyConnecti
  */
 $BulkSMSPackage->insertMessage(1, "07xyzzzzzz",   "numeric", "Test SMS 1");
 $BulkSMSPackage->insertMessage(2, "+407xyzzzzzz", "numeric", "Test SMS 2");
-$BulkSMSPackage->insertMessage(3, "0407xyzzzzzz", "numeric", "Test SMS 3");
+$BulkSMSPackage->insertMessage(3, "00407xyzzzzzz", "numeric", "Test SMS 3");
 
 /*
  * 
