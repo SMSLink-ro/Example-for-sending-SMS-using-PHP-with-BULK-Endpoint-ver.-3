@@ -24,7 +24,7 @@ The [complete documentation](https://www.smslink.ro/sms-gateway-documentatie-sms
 
 ## System Requirements 
 
-PHP 5 or greater with CURL enabled
+PHP 5 or greater with PHP cURL library
 
 ## Additional modules and integrations
 
