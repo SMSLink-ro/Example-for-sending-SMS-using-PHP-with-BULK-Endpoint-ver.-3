@@ -175,7 +175,7 @@ class SMSLinkSMSGatewayBulkPackage
     /**
      *   Sets the protocol that will be used by SMS Gateway (HTTPS or HTTP).
      *
-     *   @param string    $methodName     POST or GET
+     *   @param string    $protocolName     HTTPS or HTTP
      *
      *   @return bool     true if method was set or false otherwise
      */
@@ -193,7 +193,7 @@ class SMSLinkSMSGatewayBulkPackage
     /**
      *   Returns the protocol that is used by SMS Gateway (HTTPS or HTTP)
      *
-     *   @return string     GET or POST possible values
+     *   @return string     HTTPS or HTTP possible values
      */
     public function getProtocol()
     {
